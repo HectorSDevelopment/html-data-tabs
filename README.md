@@ -10,6 +10,7 @@ A easy and a simple way to create html tabs.
 Here is a very basic usage, without any style:
 *[check the demos for advanced usage with styles ;)]
 
+```html
 <!-- Create a header for the tabs, with an attribute called tabs -->
 <!-- Header and tabs can be any element that you want -->
 <!--Just use wheatever you want ;) -->
@@ -34,3 +35,4 @@ Here is a very basic usage, without any style:
 <div id="container2" style="display: none;">
     Container 2 - This is the container #2 that refers to TAB #2
 </div>
+```
