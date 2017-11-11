@@ -1,5 +1,5 @@
 # html-data-tabs
-A easy and a simple way to create html tabs.
+A easy and a simple way to create html tabs:
 
 * Very simple usage
 * Not need any external plugin like jQuery or similar.
@@ -7,8 +7,8 @@ A easy and a simple way to create html tabs.
 
 ----
 
-Here is a very basic usage, without any style:
-*[check the demos for advanced usage with styles ;)]
+#Here is a very basic usage, without any style:
+- check the demos for advanced usage with styles ;)
 
 ```html
 <!-- Create a header for the tabs, with an attribute called tabs -->
