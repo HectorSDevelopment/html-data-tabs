@@ -1,25 +1,93 @@
 {
-  "name": "html-data-tabs",
-  "version": "1.0.3",
-  "description": "A easy way to create html tabs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      "html-data-tabs",
+      "/mnt/c/www/Fast/html"
+    ],
+    [
+      "html-data-tabs",
+      "/mnt/c/www/clh/html"
+    ]
+  ],
+  "_from": "html-data-tabs@latest",
+  "_id": "html-data-tabs@1.0.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/html-data-tabs",
+  "_nodeVersion": "4.2.6",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/html-data-tabs_1.0.4_1519630424603_0.7743530751038692"
   },
+  "_npmUser": {
+    "email": "hectors.digital@gmail.com",
+    "name": "saenzo"
+  },
+  "_npmVersion": "3.5.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "html-data-tabs",
+    "raw": "html-data-tabs",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_shrinkwrap": null,
+  "_spec": "html-data-tabs",
+  "_where": "/mnt/c/www/clh/html",
+  "author": {
+    "name": "Hector Saenz"
+  },
+  "bugs": {
+    "url": "https://github.com/HectorSDevelopment/html-data-tabs/issues"
+  },
+  "dependencies": {},
+  "description": "A easy way to create html tabs",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "fileCount": 8,
+    "shasum": "090149e8eb7d00d68f0379147f19ba2c56a34461",
+    "tarball": "https://registry.npmjs.org/html-data-tabs/-/html-data-tabs-1.0.4.tgz",
+    "unpackedSize": 14974
+  },
+  "gitHead": "d63a3cad4638672d54cf7510734a4e301f4d1745",
+  "homepage": "https://github.com/HectorSDevelopment/html-data-tabs#readme",
+  "keywords": [
+    "html",
+    "css",
+    "view",
+    "tab",
+    "tabs",
+    "list",
+    "lists",
+    "panel",
+    "panels",
+    "navigation",
+    "automatic",
+    "plugin"
+  ],
+  "license": "MIT License",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "saenzo",
+      "email": "hectors.digital@gmail.com"
+    }
+  ],
+  "name": "html-data-tabs",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HectorSDevelopment/html-data-tabs.git"
   },
-  "keywords": [
-    "html",
-    "tabs",
-    "javascript",
-    "ES6"
-  ],
-  "author": "Hector Saenz",
-  "license": "MIT License",
-  "bugs": {
-    "url": "https://github.com/HectorSDevelopment/html-data-tabs/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/HectorSDevelopment/html-data-tabs#readme"
+  "version": "1.0.8"
 }
