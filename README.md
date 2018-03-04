@@ -40,7 +40,7 @@ Check the demos files for advanced usage with styles!
 
 # Release notes*
 
-1.0.7 to 1.0.8
+1.0.7 to 1.0.8:
 * Fixed some bugs, nothing important.
 
 1.0.6:
