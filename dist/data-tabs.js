@@ -6,19 +6,15 @@
     // Al hacer click sobre una pestanha:
     // Mostrar u ocultar contenedores
     const onclick = ev => {
-        let tab = ev.target;
-        let tabs = ev.currentTarget;
-
-        // Verificar si se debera trabajar sobre esta pestanha
-        if (!tab.hasAttribute('tabs-tab-id')) {
-            return;
-        } else if (tab.classList.contains(active_class)) {
+        let tab = ev.target.closest('[tabs-tab-id]');
+        let tabs = tab.closest('[tabs]');
+        
+        // Verificar si ya esta activado
+        if (tab.classList.contains(active_class)) {
             return;
         }
         
-        hidePrevTab(tabs);
-
-        showTab(tab, tabs);
+        hidePrevTab(tabs); showTab(tab, tabs);
     };
 
     // Preparar todas las pestanhas y sus contenedores
@@ -29,14 +25,14 @@
 
         // Por cada elemento...
         for (let el of tabs) {
-            // Escuchar el evento click
-            el.addEventListener('click', onclick);
-
             // Obtener la lista de pestanhas dentro del elemento
             let list = el.querySelectorAll('[tabs-tab-id]');
 
             // Por cada pestanha dentro del elemento...
             for (let tab of list) {
+                // Escuchar evento click
+                tab.addEventListener('click', onclick);
+
                 // Verificar si tiene la clase active
                 if (tab.classList.contains(active_class)) {
                     activeTabs(tab, el); continue;
@@ -88,13 +84,21 @@
 
         if (remove) {
             if (active_color.startsWith('.')) {
-                tab.classList.remove(active_color.substring(1));
+                for (let _class of active_color.split(".")) {
+                    if (!_class) continue;
+
+                    tab.classList.remove(_class.trim());
+                }
             } else {
                 tab.style['background-color'] = null;
             }
         } else {
             if (active_color.startsWith('.')) {
-                tab.classList.add(active_color.substring(1));
+                for (let _class of active_color.split(".")) {
+                    if (!_class) continue;
+
+                    tab.classList.add(_class.trim());
+                }
             } else {
                 tab.style['background-color'] = active_color;
             }
@@ -102,6 +106,6 @@
     };
 
     window.onload = ev => {
-        setTimeout(init, 100);
+        setTimeout(init, 500);
     };
 })();
